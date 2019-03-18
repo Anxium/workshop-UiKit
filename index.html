@@ -11,7 +11,78 @@
 </head>
 
 <body>
+    <!-- Navigation -->
+    <header uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+      <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="#">lien 1</a></li>
+                  <li class="uk-parent"><a href="#">lien 2</a></li>
+                  <li><a href=""></a></li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    <!-- Hero container -->
+    <div class="uk-cover-container uk-background-cover hero uk-flex uk-flex-center uk-flex-middle" data-src="img/cover.jpg" uk-height-viewport uk-img uk-parallax="bgy: -200">
+      <h1 class="uk-heading-hero uk-text-center">The Dream Team</h1>
+    </div>
+    <!-- Présentation -->
+    <div class="uk-child-width-expand@s desc" uk-grid>
+        <div class="uk-grid-item-match">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h2>The Dream Team's Restaurant</h2>
+                <p>
+                    Best restaurant in town
+                </p>
+                <p>... And in the world !</p>
+            </div>
+         </div>
+        <div class="text">
+            <h3>Made in BeCode Charleroi</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+      <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+          <li><a href="#">Entrée</a></li>
+          <li><a href="#">Plat</a></li>
+          <li><a href="#">Dessert</a></li>
+          <li><a href="#">Digestif</a></li>
+      </ul>
 
+      <ul class="uk-switcher uk-margin uk-flex uk-flex-center">
+          <li>HTML / CSS</li>
+          <li>Javascript</li>
+          <li>Php</li>
+          <li>Angular / React</li>
+      </ul>
+    </div>
+    <!-- Team -->
+    <div class="uk-grid-medium uk-child-width-expand@s uk-text-center team" uk-grid>
+      <h2 class="uk-width-1-1">We Are The Dream Team</h2>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body .uk-width-1-2">
+              <h3>Axel</h3>
+              <img data-src="img/Axel.jpg" width="150" height="150" alt="Axel" uk-img>
+              <a href="https://github.com/Anxium">Github</a>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body .uk-width-1-2">
+              <h3>Justine</h3>
+              <img data-src="img/Justine.jpg" width="150" height="150" alt="Justine" uk-img>
+              <a href="https://github.com/JustineCrenier">Github</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="uk-text-center">
+      &copy; all rights reserved Axel &amp; Justine 2019.
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 </body>
